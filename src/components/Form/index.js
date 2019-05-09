@@ -3,10 +3,9 @@ import React from 'react';
 import PropsTypes from 'prop-types';
 
 const Form = ({ input, handleInputChanged, handleSubmit }) => {
-  const inputHasChanged = (event) => {
-    console.log(event.target.value);
-    handleInputChanged(event.target.value);
-  };
+  const inputHasChanged = event => (
+    handleInputChanged(event.target.value)
+  );
   const formHasBeenSubmited = (event) => {
     event.preventDefault();
     handleSubmit();

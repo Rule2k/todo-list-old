@@ -6,7 +6,7 @@ import { connect } from 'react-redux';
 /**
  * Local import
  */
-import Count from 'src/components/Count';
+import TodoList from 'src/components/TodoList';
 
 // Action Creators
 
@@ -18,13 +18,13 @@ const mapStateToProps = (state, ownProps) => ({
 const mapDispatchToProps = (dispatch, ownProps) => ({});
 
 // Container
-const CountContainer = connect(
+const TodoListContainer = connect(
   mapStateToProps,
   mapDispatchToProps,
-)(Count);
+)(TodoList);
 
 
 /**
  * Export
  */
-export default CountContainer;
+export default TodoListContainer;

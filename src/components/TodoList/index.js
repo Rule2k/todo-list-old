@@ -2,16 +2,12 @@
 import React from 'react';
 import PropsTypes from 'prop-types';
 
-const TodoList = () => (
+const TodoList = ({ tasks }) => (
   <div id="todolist">
     <li>
-      <ul>Tâche 1</ul>
-      <ul>Tâche 2</ul>
-      <ul>Tâche 3</ul>
-      <ul>Tâche 4</ul>
-      <ul>Tâche 5</ul>
-      <ul>Tâche 6</ul>
-      <ul>Tâche 7</ul>
+      {tasks.map(task => (
+        <ul key={task}>{task}</ul>
+      ))}
     </li>
   </div>
 );

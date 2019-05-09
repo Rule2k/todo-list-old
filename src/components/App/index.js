@@ -7,7 +7,7 @@ import React from 'react';
  * Local import
  */
 import Count from 'src/containers/Count';
-import TodoList from 'src/components/TodoList';
+import TodoList from 'src/containers/TodoList';
 import Form from 'src/containers/Form';
 import './app.scss';
 
