@@ -8,7 +8,7 @@ import React from 'react';
  */
 import Count from 'src/components/Count';
 import TodoList from 'src/components/TodoList';
-import Form from 'src/components/Form';
+import Form from 'src/containers/Form';
 import './app.scss';
 
 /**

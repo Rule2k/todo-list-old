@@ -8,7 +8,6 @@ const initialState = {
 /**
  * Types
  */
-const DO_SOMETHING = 'DO_SOMETHING';
 const INPUT_CHANGED = 'INPUT_CHANGED';
 
 /**
@@ -20,12 +19,11 @@ const INPUT_CHANGED = 'INPUT_CHANGED';
  */
 const reducer = (state = initialState, action = {}) => {
   switch (action.type) {
-    case DO_SOMETHING:
+    case INPUT_CHANGED:
       return {
         ...state,
-        clic: state.clic + 1,
+        input: action.input,
       };
-
     default:
       return state;
   }
@@ -34,8 +32,10 @@ const reducer = (state = initialState, action = {}) => {
 /**
  * Action Creators
  */
-export const doSomething = () => ({
-  type: DO_SOMETHING,
+
+export const handleInputChanged = input => ({
+  type: INPUT_CHANGED,
+  input,
 });
 
 /**
