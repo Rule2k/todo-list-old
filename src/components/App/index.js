@@ -6,7 +6,7 @@ import React from 'react';
 /**
  * Local import
  */
-import Count from 'src/components/Count';
+import Count from 'src/containers/Count';
 import TodoList from 'src/components/TodoList';
 import Form from 'src/containers/Form';
 import './app.scss';

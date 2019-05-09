@@ -2,9 +2,9 @@
 import React from 'react';
 import PropsTypes from 'prop-types';
 
-const Count = () => (
+const Count = ({ tasks }) => (
   <div id="count">
-    <p>x tâches</p>
+    <p>{tasks.length} tâches</p>
   </div>
 );
 
