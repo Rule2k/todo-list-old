@@ -15,7 +15,7 @@ import './app.scss';
  * Code
  */
 const App = () => (
-  <div id="App">
+  <div id="app">
     <Count />
     <Form />
     <TodoList />

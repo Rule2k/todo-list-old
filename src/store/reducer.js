@@ -33,6 +33,7 @@ const reducer = (state = initialState, action = {}) => {
           ...state.tasks,
           state.input,
         ],
+        input: '',
       };
     default:
       return state;
