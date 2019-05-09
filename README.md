@@ -1,3 +1,3 @@
 # todo-list
 
-Projet simple d'une todo-list from scratch
+Projet d'une todo-list simpliste from scratch
