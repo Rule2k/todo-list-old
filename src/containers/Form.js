@@ -9,7 +9,7 @@ import { connect } from 'react-redux';
 import Form from 'src/components/Form';
 
 // Action Creators
-import { handleInputChanged } from 'src/store/reducer';
+import { handleInputChanged, handleSubmit } from 'src/store/reducer';
 
 
 const mapStateToProps = (state, ownProps) => ({
@@ -19,6 +19,9 @@ const mapStateToProps = (state, ownProps) => ({
 const mapDispatchToProps = (dispatch, ownProps) => ({
   handleInputChanged: (input) => {
     dispatch(handleInputChanged(input));
+  },
+  handleSubmit: (input) => {
+    dispatch(handleSubmit(input));
   },
 });
 

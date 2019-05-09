@@ -3,12 +3,14 @@
  */
 const initialState = {
   input: '',
+  tasks: [],
 };
 
 /**
  * Types
  */
 const INPUT_CHANGED = 'INPUT_CHANGED';
+const FORM_SUBMITED = 'FORM_SUBMITED';
 
 /**
  * Traitements
@@ -24,6 +26,14 @@ const reducer = (state = initialState, action = {}) => {
         ...state,
         input: action.input,
       };
+    case FORM_SUBMITED:
+      return {
+        ...state,
+        tasks: [
+          ...state.tasks,
+          state.input,
+        ],
+      };
     default:
       return state;
   }
@@ -36,6 +46,10 @@ const reducer = (state = initialState, action = {}) => {
 export const handleInputChanged = input => ({
   type: INPUT_CHANGED,
   input,
+});
+
+export const handleSubmit = () => ({
+  type: FORM_SUBMITED,
 });
 
 /**
