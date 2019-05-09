@@ -1,6 +1,7 @@
 
 import React from 'react';
 import PropsTypes from 'prop-types';
+import './todolist.scss';
 
 const TodoList = ({ tasks }) => (
   <div id="todolist">
