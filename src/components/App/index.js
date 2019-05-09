@@ -6,14 +6,20 @@ import React from 'react';
 /**
  * Local import
  */
-import Example from 'src/containers/Example';
+import Count from 'src/components/Count';
+import TodoList from 'src/components/TodoList';
+import Form from 'src/components/Form';
 import './app.scss';
 
 /**
  * Code
  */
 const App = () => (
-  <Example />
+  <div id="App">
+    <Count />
+    <Form />
+    <TodoList />
+  </div>
 );
 
 /**

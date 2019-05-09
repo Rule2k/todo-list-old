@@ -2,14 +2,14 @@
  * Initial State
  */
 const initialState = {
-  message: 'Hello',
-  clic: 0,
+  input: '',
 };
 
 /**
  * Types
  */
 const DO_SOMETHING = 'DO_SOMETHING';
+const INPUT_CHANGED = 'INPUT_CHANGED';
 
 /**
  * Traitements
